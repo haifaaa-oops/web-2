@@ -1,6 +1,8 @@
-# Pemrograman Web 2
+# Praktikum 10
+Repositori untuk praktikum 10 mata kuliah Web Programming
 
-## Repisitori Praktikum Pemrograman Web 2
-- Nama : Haifa Muzdalifah Ramadhani
-- NIM :0110124164
-- Rombel : SI 11
+## Deskripsi
+File-file yang terkait dengan praktikum 10
+
+## File
+- index.html: Halaman utama praktikum 10
