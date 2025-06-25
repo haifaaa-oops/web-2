@@ -1,22 +1,3 @@
-<?php
-require_once __DIR__ . '/../models/User.php';
-
-use models\User;
-
-if(!isset($_GET['id'])){
-    header("Location: list-user.php");
-    exit;
-}
-
-$user = User::find($_GET['id']);
-
-if(!$user) {
-    header("Location: list-user.php");
-    exit;
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,55 +55,25 @@ if(!$user) {
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Cindi Novianti
+                    Haifa Muzdalifah
                 </div>
             </nav>
         </div>
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Add User</h1>
+                    <h1 class="mt-4">Dashboard</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="dashboard.php">User</a></li>
-                        <li class="breadcrumb-item active">Detail User</li>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            Add User
+                            Dashboard
                         </div>
                         <div class="card-body">
-                            <table class="table table-bordered">
-                                <tr>
-                                    <th>First Name</th>
-                                    <td><?= $user['firstname'] ?></td>
-                                </tr>
-                                <tr>
-                                    <th>Last Name</th>
-                                    <td><?= $user['lastname'] ?></td>
-                                </tr>
-                                <tr>
-                                    <th>Gender</th>
-                                    <td><?= $user['gender'] ?></td>
-                                </tr>
-                                <tr>
-                                    <th>Age</th>
-                                    <td><?= $user['age'] ?></td>
-                                </tr>
-                                <tr>
-                                    <th>Weight</th>
-                                    <td><?= $user['weight'] ?></td>
-                                </tr>
-                            </table>
-
-                            <div class="mt-3">
-                                <a href="list-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
-                                <a href="edit-user.php?id=<?= $user['id'] ?>" class="btn btn-warning"><i class="fas fa-edit"></i> Edit</a>
-                                <a href="delete-user.php?id=<?= $user['id'] ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
-
-
-                            </div>
+                           <h1>THIS IS A DASHBOARD PAGE</h1>
+                           <p>User Dashboard <a href="list-user.php">here</a></p>
                         </div>
                     </div>
                 </div>

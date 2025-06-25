@@ -3,16 +3,14 @@ require_once __DIR__ . '/../models/User.php';
 
 use models\User;
 
-if (isset($_POST['submit'])) {
-    $data = [
-        'firstname' => $_POST['firstname'],
-        'lastname' => $_POST['lastname'],
-        'gender' => $_POST['gender'],
-        'age' => $_POST['age'],
-        'weight' => $_POST['weight'],
-    ];
+if(!isset($_GET['id'])){
+    header("Location: list-user.php");
+    exit;
+}
 
-    User::create($data);
+$user = User::find($_GET['id']);
+
+if(!$user) {
     header("Location: list-user.php");
     exit;
 }
@@ -76,7 +74,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Cindi Novianti
+                    Haifa Muzdalifah
                 </div>
             </nav>
         </div>
@@ -87,7 +85,7 @@ if (isset($_POST['submit'])) {
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="dashboard.php">User</a></li>
-                        <li class="breadcrumb-item active">Add User</li>
+                        <li class="breadcrumb-item active">Detail User</li>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">
@@ -95,38 +93,36 @@ if (isset($_POST['submit'])) {
                             Add User
                         </div>
                         <div class="card-body">
-                            <form action="create-user.php" method="POST">
-                                <div class="mb-3">
-                                    <label for="firstname" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstname" name="firstname" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="lastname" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname" name="lastname" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label d-block">Gender</label>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="gender" id="laki-laki" value="Laki-laki">
-                                        <label for="laki-laki" class="form-check-label">Laki-laki</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input type="radio" class="form-check-input" name="gender" id="perempuan" value="Perempuan">
-                                        <label for="perempuan" class="form-check-label">Perempuan</label>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="age" class="form-label">Age</label>
-                                    <input type="number" class="form-control" id="age" name="age" min="0" max="100" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="weight" class="form-label">Weight</label>
-                                    <input type="number" class="form-control" id="weight" name="weight" min="0" max="100" required>
-                                </div>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>First Name</th>
+                                    <td><?= $user['firstname'] ?></td>
+                                </tr>
+                                <tr>
+                                    <th>Last Name</th>
+                                    <td><?= $user['lastname'] ?></td>
+                                </tr>
+                                <tr>
+                                    <th>Gender</th>
+                                    <td><?= $user['gender'] ?></td>
+                                </tr>
+                                <tr>
+                                    <th>Age</th>
+                                    <td><?= $user['age'] ?></td>
+                                </tr>
+                                <tr>
+                                    <th>Weight</th>
+                                    <td><?= $user['weight'] ?></td>
+                                </tr>
+                            </table>
 
+                            <div class="mt-3">
                                 <a href="list-user.php" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back</a>
-                                <button type="submit" name="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
-                            </form>
+                                <a href="edit-user.php?id=<?= $user['id'] ?>" class="btn btn-warning"><i class="fas fa-edit"></i> Edit</a>
+                                <a href="delete-user.php?id=<?= $user['id'] ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
