@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume</title>
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Contact</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -17,12 +17,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body class="d-flex flex-column h-100 bg-light">
+    <body class="d-flex flex-column">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Flavia Fitri Renata</span></a>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Haifa Muzdalifah</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -34,33 +34,20 @@
                     </div>
                 </div>
             </nav>
-            <!-- Page Content-->
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <?php include_once 'partials/sections/contact-section.php'?>
+
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Experience Section-->
-                        <?php include_once 'partials/sections/experience-section.php'?>
-
-                        <!-- Education Section-->
-                        <?php include_once 'partials/sections/education-section.php'?>
-
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <?php include_once 'partials/sections/skills-section.php'?>
-
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; <?= date("Y")?> Flavia Fitri Renata</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy;<?= date("Y")?>Haifa Muzdalifah</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
@@ -75,5 +62,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

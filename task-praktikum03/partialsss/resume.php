@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Project</title>
+        <title>Resume</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -22,7 +22,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Flavia Fitri Renata</span></a>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Haifa Muzdalifah</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -34,18 +34,33 @@
                     </div>
                 </div>
             </nav>
-            <!-- Projects Section-->
-            <?php include_once 'partials/sections/project-section.php'?>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <?php include_once 'partials/sections/experience-section.php'?>
 
-            <!-- Call to action section-->
-            <?php include_once 'partials/sections/call-section.php'?>
+                        <!-- Education Section-->
+                        <?php include_once 'partials/sections/education-section.php'?>
 
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <?php include_once 'partials/sections/skills-section.php'?>
+
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; <?= date("Y")?> Flavia Fitri Renata</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; <?= date("Y")?> Haifa Muzdalifah</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>

@@ -32,12 +32,12 @@
             <div class="col-xxl-8">
                 <div class="text-center my-5">
                     <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                    <p class="lead fw-light mb-4">Haiiii,My name is Flavia Fitri Renata.</p>
-                    <p class="text-muted">I like reading fiction novels and i'm currently studying at STT Terpadu Nurul Fikri in the second semester.</p>
+                    <p class="lead fw-light mb-4">Haloo,My name is Haifa Muzdalifah.</p>
+                    <p class="text-muted">I like to snack on ice cubes and i'm currently studying at STT Terpadu Nurul Fikri in the second semester.</p>
                     <div class="d-flex justify-content-center fs-2 gap-4">
-                        <a class="text-gradient" href="https://www.instagram.com/flv_rntaaa/"><i class="bi bi-instagram"></i></a>
-                        <a class="text-gradient" href="https://www.linkedin.com/in/flavia-fitri-renata-724a29335/"><i class="bi bi-linkedin"></i></a>
-                        <a class="text-gradient" href="https://github.com/Flaviarenata"><i class="bi bi-github"></i></a>
+                        <a class="text-gradient" href="https://www.instagram.com/put.haiput/"><i class="bi bi-instagram"></i></a>
+                        <a class="text-gradient" href="https://www.linkedin.com/in/haifa-muzdalifah/"><i class="bi bi-linkedin"></i></a>
+                        <a class="text-gradient" href="https://github.com/haifaaa-oops"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
