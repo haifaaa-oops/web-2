@@ -36,7 +36,7 @@ require_once "data-form-regis.php"
             <i class="fa fa-address-book"></i>
           </div>
         </div> 
-        <input id="nama_lengkap" name="nama_lengkap" placeholder="*Cindi Novianti" type="text" class="form-control" required="required" minlenght="3" maxlength="50">
+        <input id="nama_lengkap" name="nama_lengkap" placeholder="*Haifa Muzdalifah" type="text" class="form-control" required="required" minlenght="3" maxlength="50">
       </div>
     </div>
   </div>

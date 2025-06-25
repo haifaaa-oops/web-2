@@ -27,7 +27,7 @@ require_once "nilai_mahasiswa.php"
         <div class="input-group-prepend">
           <div class="input-group-text"></div>
         </div> 
-        <input id="name" name="name" placeholder="Cindi Novianti" type="text" class="form-control" value="" size="30" required="required" minlenght="3" maxlength="50">
+        <input id="name" name="name" placeholder="Haifa Muzdalifah" type="text" class="form-control" value="" size="30" required="required" minlenght="3" maxlength="50">
       </div>
     </div>
   </div>
